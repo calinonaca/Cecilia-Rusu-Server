@@ -1,0 +1,170 @@
+[debug] [2021-08-14T20:57:49.049Z] ----------------------------------------------------------------------
+[debug] [2021-08-14T20:57:49.051Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\corne\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-08-14T20:57:49.052Z] CLI Version:   9.16.5
+[debug] [2021-08-14T20:57:49.052Z] Platform:      win32
+[debug] [2021-08-14T20:57:49.052Z] Node Version:  v14.17.5
+[debug] [2021-08-14T20:57:49.052Z] Time:          Sat Aug 14 2021 16:57:49 GMT-0400 (Eastern Daylight Time)
+[debug] [2021-08-14T20:57:49.053Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-14T20:57:49.059Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-14T20:57:49.059Z] > authorizing via signed-in user (ceciliarusuwebdev@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\CalinProjects\CeciliaRusu.ro\server
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-08-14T20:58:03.303Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-08-14T20:58:04.414Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-08-14T20:58:04.414Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project cecilia-rusu-server (Cecilia Rusu Server) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\CalinProjects\CeciliaRusu.ro\server is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=245919608&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-08-14T20:58:59.147Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"363844dc969cf021ff01","redirect_uri":"http://localhost:9005","state":"245919608"}
+[debug] [2021-08-14T20:58:59.433Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 14 Aug 2021 20:58:59 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"420b9c86376c6df62f24750b7d31f1c2\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"EE55:76C4:74D427:AF74DC:61182E93"}
+[debug] [2021-08-14T20:58:59.446Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-08-14T20:59:00.422Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-08-14T20:59:00.422Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"calinonaca","id":27994530,"node_id":"MDQ6VXNlcjI3OTk0NTMw","avatar_url":"https://avatars.githubusercontent.com/u/27994530?v=4","gravatar_id":"","url":"https://api.github.com/users/calinonaca","html_url":"https://github.com/calinonaca","followers_url":"https://api.github.com/users/calinonaca/followers","following_url":"https://api.github.com/users/calinonaca/following{/other_user}","gists_url":"https://api.github.com/users/calinonaca/gists{/gist_id}","starred_url":"https://api.github.com/users/calinonaca/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/calinonaca/subscriptions","organizations_url":"https://api.github.com/users/calinonaca/orgs","repos_url":"https://api.github.com/users/calinonaca/repos","events_url":"https://api.github.com/users/calinonaca/events{/privacy}","received_events_url":"https://api.github.com/users/calinonaca/received_events","type":"User","site_admin":false,"name":"Calin Onaca","company":null,"blog":"","location":null,"email":"onaca.calin@gmail.com","hireable":null,"bio":null,"twitter_username":null,"public_repos":0,"public_gists":0,"followers":0,"following":1,"created_at":"2017-04-25T07:11:04Z","updated_at":"2021-08-14T20:58:54Z","private_gists":0,"total_private_repos":3,"owned_private_repos":3,"disk_usage":52287,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as calinonaca 
+[info] 
+[debug] [2021-08-14T20:59:11.403Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2021-08-14T20:59:12.023Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 404
+[debug] [2021-08-14T20:59:12.023Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T20:59:19.032Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2021-08-14T20:59:20.460Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 404
+[debug] [2021-08-14T20:59:20.460Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T20:59:21.139Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-14T20:59:21.739Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-14T20:59:21.739Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T20:59:32.760Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2021-08-14T20:59:33.650Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-14T20:59:35.056Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 404
+[debug] [2021-08-14T20:59:35.057Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T20:59:35.124Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-14T20:59:35.124Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T20:59:38.276Z] >>> [apiv2][query] GET https://api.github.com/repos/r/actions/secrets/public-key type=owner
+[debug] [2021-08-14T20:59:39.354Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2021-08-14T20:59:39.664Z] <<< [apiv2][status] GET https://api.github.com/repos/r/actions/secrets/public-key 404
+[debug] [2021-08-14T20:59:39.665Z] <<< [apiv2][body] GET https://api.github.com/repos/r/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T20:59:40.081Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2021-08-14T20:59:40.081Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T20:59:40.134Z] >>> [apiv2][query] GET https://api.github.com/repos/n/actions/secrets/public-key type=owner
+[debug] [2021-08-14T20:59:42.000Z] <<< [apiv2][status] GET https://api.github.com/repos/n/actions/secrets/public-key 404
+[debug] [2021-08-14T20:59:42.000Z] <<< [apiv2][body] GET https://api.github.com/repos/n/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T20:59:42.998Z] >>> [apiv2][query] GET https://api.github.com/repos/N/actions/secrets/public-key type=owner
+[debug] [2021-08-14T20:59:44.957Z] <<< [apiv2][status] GET https://api.github.com/repos/N/actions/secrets/public-key 404
+[debug] [2021-08-14T20:59:44.957Z] <<< [apiv2][body] GET https://api.github.com/repos/N/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T20:59:53.333Z] ----------------------------------------------------------------------
+[debug] [2021-08-14T20:59:53.335Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\corne\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-08-14T20:59:53.336Z] CLI Version:   9.16.5
+[debug] [2021-08-14T20:59:53.336Z] Platform:      win32
+[debug] [2021-08-14T20:59:53.336Z] Node Version:  v14.17.5
+[debug] [2021-08-14T20:59:53.337Z] Time:          Sat Aug 14 2021 16:59:53 GMT-0400 (Eastern Daylight Time)
+[debug] [2021-08-14T20:59:53.337Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-14T20:59:53.344Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-14T20:59:53.344Z] > authorizing via signed-in user (ceciliarusuwebdev@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\CalinProjects\CeciliaRusu.ro\server
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-08-14T20:59:58.204Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-08-14T20:59:59.222Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-08-14T20:59:59.222Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project cecilia-rusu-server (Cecilia Rusu Server) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\CalinProjects\CeciliaRusu.ro\server is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=541021509&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-08-14T21:00:01.776Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"3f24329c0cd69654bbcd","redirect_uri":"http://localhost:9005","state":"541021509"}
+[debug] [2021-08-14T21:00:02.210Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 14 Aug 2021 21:00:02 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"463cbf10fdcfa4172b918c184901b31a\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"C52D:047D:4C99F4:7F5EEF:61182ED2"}
+[debug] [2021-08-14T21:00:02.215Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-08-14T21:00:02.421Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-08-14T21:00:02.421Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"calinonaca","id":27994530,"node_id":"MDQ6VXNlcjI3OTk0NTMw","avatar_url":"https://avatars.githubusercontent.com/u/27994530?v=4","gravatar_id":"","url":"https://api.github.com/users/calinonaca","html_url":"https://github.com/calinonaca","followers_url":"https://api.github.com/users/calinonaca/followers","following_url":"https://api.github.com/users/calinonaca/following{/other_user}","gists_url":"https://api.github.com/users/calinonaca/gists{/gist_id}","starred_url":"https://api.github.com/users/calinonaca/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/calinonaca/subscriptions","organizations_url":"https://api.github.com/users/calinonaca/orgs","repos_url":"https://api.github.com/users/calinonaca/repos","events_url":"https://api.github.com/users/calinonaca/events{/privacy}","received_events_url":"https://api.github.com/users/calinonaca/received_events","type":"User","site_admin":false,"name":"Calin Onaca","company":null,"blog":"","location":null,"email":"onaca.calin@gmail.com","hireable":null,"bio":null,"twitter_username":null,"public_repos":0,"public_gists":0,"followers":0,"following":1,"created_at":"2017-04-25T07:11:04Z","updated_at":"2021-08-14T20:58:54Z","private_gists":0,"total_private_repos":3,"owned_private_repos":3,"disk_usage":52287,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as calinonaca 
+[info] 
+[debug] [2021-08-14T21:00:06.766Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2021-08-14T21:00:07.203Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2021-08-14T21:00:07.203Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T21:00:08.608Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2021-08-14T21:00:09.458Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-14T21:00:10.196Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2021-08-14T21:00:10.196Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T21:00:10.391Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-14T21:00:10.391Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T21:00:11.609Z] >>> [apiv2][query] GET https://api.github.com/repos/n/actions/secrets/public-key type=owner
+[debug] [2021-08-14T21:00:12.605Z] <<< [apiv2][status] GET https://api.github.com/repos/n/actions/secrets/public-key 404
+[debug] [2021-08-14T21:00:12.605Z] <<< [apiv2][body] GET https://api.github.com/repos/n/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T21:00:13.337Z] >>> [apiv2][query] GET https://api.github.com/repos/no/actions/secrets/public-key type=owner
+[debug] [2021-08-14T21:00:14.113Z] <<< [apiv2][status] GET https://api.github.com/repos/no/actions/secrets/public-key 404
+[debug] [2021-08-14T21:00:14.113Z] <<< [apiv2][body] GET https://api.github.com/repos/no/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T21:01:34.365Z] >>> [apiv2][query] GET https://api.github.com/repos/ceciliarususerver/actions/secrets/public-key type=owner
+[debug] [2021-08-14T21:01:35.674Z] <<< [apiv2][status] GET https://api.github.com/repos/ceciliarususerver/actions/secrets/public-key 404
+[debug] [2021-08-14T21:01:35.674Z] <<< [apiv2][body] GET https://api.github.com/repos/ceciliarususerver/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T21:01:44.037Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-14T21:01:44.326Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-14T21:01:44.511Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-14T21:01:44.519Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-14T21:01:44.519Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T21:01:44.687Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-14T21:01:44.696Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-14T21:01:44.696Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T21:01:44.774Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-14T21:01:44.774Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T21:01:44.885Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-14T21:01:45.100Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-14T21:01:45.100Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-14T21:01:45.567Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-14T21:01:45.567Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
